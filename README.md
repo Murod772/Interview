@@ -71,32 +71,5 @@ If no events detected, return an empty slice.
    * Incremental scenario (e.g. 25 → 27 → 30 → 33)
    * Exact 110% boundary
 
+![image](https://github.com/user-attachments/assets/7c2c380f-f8e5-41b1-8154-6f1814a26f78)
 
-### 6. Visiual Example
-
-Fuel Level
-   │
-60 ┤
-   │
-50 ┤                        ● (50)
-   │
-40 ┤
-   │
-30 ┤
-   │
-22 ┼────────────── Threshold = 20 × 1.10 = 22.0
-   │
-20 ┼──● (20)─────────────────────────────────── Time ➔
-     t₁   t₂   t₃       t₄
-
-Readings:
-- t₁ = 2025-02-03T18:00:00Z, level 20  
-- t₂ = 2025-02-03T18:02:00Z, level 21  
-- t₃ = 2025-02-03T18:04:00Z, level 22  
-- t₄ = 2025-02-03T18:06:00Z, level 50  ← big jump  
-
-Detected Refuel Event:
-
-| Event Time               | Before Level | After Level |
-|--------------------------|--------------|-------------|
-| 2025-02-03T18:06:00 UTC  | 20           | 50          |
