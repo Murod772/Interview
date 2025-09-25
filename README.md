@@ -161,7 +161,7 @@
      - **Event Timestamp**: when the threshold was **first** exceeded  
 
 
-     - **Before (Baseline) Fuel Level**: the stable fuel level before the event  
+     - **Before (Initial Baseline) Fuel Level**: the stable fuel level before the event  
 
 
      - **After Fuel Level**: the reading that triggered the event
